@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./src/main.css">
 </head>
 <body class="bg-fond selection:bg-blue-950 selection:text-white">
-    <address class="lg:bg-blue-950 bg-gray-800 *:text-white p-3 flex flex-wrap justify-center md:gap-10 gap-4">
+    <address class="lg:bg-blue-950 bg-gray-800 *:text-white p-3 flex flex-wrap justify-between md:justify-center md:gap-10 gap-2">
         <p class="flex items-center gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -101,7 +101,7 @@
         <div class="group lg:hidden">
             <input type="checkbox" id="burger" class="hidden">
             <label for="burger" class="block text-2xl font-bold rotate-[90deg] text-white cursor-pointer">|||</label>
-            <ul class="flex-col -z-50  bg-white absolute left-0 top-[100%] right-0 translate-y-[-300px] group-has-[:checked]:flex transition-[translate_2s_linear] group-has-[:checked]:translate-y-0 group-has-[:checked]:z-0">
+            <ul class="flex-col z-[1000] translate-y-[-500px]  bg-white absolute left-0 top-[100%] right-0  group-has-[:checked]:flex transition-[translate_2s_linear] group-has-[:checked]:translate-y-0 ">
                 <li class="group">
                     <a href="index.html" class="py-3 pl-6 pr-4 font-bold text-slate-800 hover:bg-gray-100 border-b border-gray-300 flex items-center justify-between">
                         Home
@@ -174,8 +174,8 @@
 
     <!-- MAIN -->
      <main>
-        <section class="py-28 px-5 bg-monFond bg-center bg-cover bg-no-repeat">
-            <div class="bg-black/45 lg:p-[50px] max-lg:p-5 rounded-md">
+        <section class="h-screen bg-monFond bg-center bg-cover bg-no-repeat relative">
+            <div class="pt-[120px] px-5 md:px-10 md:pt-[180px] h-full relative z-50 after:conent-[' '] after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:bg-black/65 after:-z-50">
                 <h1 class="text-white text-4xl text-center mb-5 font-bold">Best Consulting Dedicated to serve your!</h1>
                 <p class="lg:text-center text-justify text-xl text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem laudantium corrupti fuga assumenda dignissimos aperiam iure quam aspernatur voluptatum tempore doloribus, consequuntur voluptatibus et, ut id saepe minus possimus. Ratione.</p>
                 <div class="mt-8 flex max-md:flex-col justify-center items-center gap-5">
@@ -204,10 +204,8 @@
 
         <section class="max-md:px-5 max-md:py-[50px] py-[100px] px-[50px] bg-white">
             <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] md:gap-8 gap-12">
-                <div class="grid md:grid-cols-[1fr_1fr] gap-4 *:rounded-md">
-                    <img src="images/article-image-1.jpg" alt="voiture" class="img1">
-                    <img src="images/article-image-2.jpg" alt="plage" class="img2">
-                    <img src="images/main.jpg" alt="pont" class="img3">
+                <div class="*:rounded-md">
+                    <img src="images/about10.jpg" alt="services">
                 </div>
                 <div>
                     <p class="uppercase font-semibold mb-2 text-blue-800">explor features</p>
